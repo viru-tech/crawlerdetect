@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.txt
+// auto-generated based on https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Exclusions.txt
 var exclusions = []string{
 	`Safari.[\d\.]*`,
 	`Firefox.[\d\.]*`,
