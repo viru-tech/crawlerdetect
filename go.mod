@@ -1,3 +1,3 @@
-module github.com/x-way/crawlerdetect
+module github.com/Mazay98/crawlerdetect
 
 go 1.16
