@@ -19,17 +19,21 @@ END{
 ' > "${name}.go"
 }
 echo "Updating crawlers.go"
-datafile "https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Crawlers.txt" "crawlers"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt" "crawlers"
 echo "Updating exclusions.go"
-datafile "https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Exclusions.txt" "exclusions"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.txt" "exclusions"
 
 echo "Patching files for re2 engine"
 # XXX: golang re2 based regex engine does not support negative lookahead Yandex(?!Search)
-# as workaround add YandexSearch to the exclusions list and add Yandex to the crawlers list
-sed -i "" -e 's/`Yandex(?!Search)`/`Yandex`/' crawlers.go
+# as workaround add YandexSearch to the exclusions list and remove YandexSearch from
+# the crawlers list (we don't want to block Yandex.Dzen)
+sed -i "" -e '/`Yandex(?!Search)`/d' crawlers.go
 sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
-sed -i "" -e 's/`YandexSearch`,/	&/' exclusions.go
+
+echo "Patching files with yandex.bots"
+sed -i "" -e '/^}$/i\
+	`yandex\\\.com\\\/bots`,' crawlers.go
 
 echo "Updating testdata/crawlers.txt"
 curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/crawlers.txt

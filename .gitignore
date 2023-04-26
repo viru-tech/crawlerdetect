@@ -1,2 +1,4 @@
 cmd/crawlerdetect/crawlerdetect
 coverage.out
+
+.idea/

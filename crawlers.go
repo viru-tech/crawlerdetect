@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Crawlers.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt
 var crawlers = []string{
 	` YLT`,
 	`^Aether`,
@@ -222,6 +222,7 @@ var crawlers = []string{
 	`changedetection`,
 	`ChangesMeter`,
 	`Charlotte`,
+	`chatterino-api-cache`,
 	`CheckHost`,
 	`checkprivacy`,
 	`CherryPicker`,
@@ -277,6 +278,7 @@ var crawlers = []string{
 	`DareBoost`,
 	`DatabaseDriverMysqli`,
 	`DataCha0s`,
+	`DatadogSynthetics`,
 	`Datafeedwatch`,
 	`Datanyze`,
 	`DataparkSearch`,
@@ -403,10 +405,12 @@ var crawlers = []string{
 	`Flunky`,
 	`flynxapp`,
 	`forensiq`,
+	`ForusP`,
 	`FoundSeoTool`,
 	`free thumbnails`,
 	`Freeuploader`,
 	`FreshRSS`,
+	`frontman`,
 	`Funnelback`,
 	`Fuzz Faster U Fool`,
 	`G-i-g-a-b-o-t`,
@@ -437,6 +441,7 @@ var crawlers = []string{
 	`Go-Ahead-Got-It`,
 	`Go-http-client`,
 	`go-mtasts\/`,
+	`gobuster`,
 	`gobyus`,
 	`Gofeed`,
 	`gofetch`,
@@ -748,6 +753,7 @@ var crawlers = []string{
 	`mogimogi`,
 	`Mojeek`,
 	`Mojolicious \(Perl\)`,
+	`Mollie`,
 	`monitis`,
 	`Monitority\/`,
 	`Monit\/`,
@@ -1032,6 +1038,7 @@ var crawlers = []string{
 	`Seobility`,
 	`SEOCentro`,
 	`SeoCheck`,
+	`seocompany`,
 	`SEOkicks`,
 	`SEOlizer`,
 	`Seomoz`,
@@ -1229,6 +1236,7 @@ var crawlers = []string{
 	`via ggpht\.com GoogleImageProxy`,
 	`Virusdie`,
 	`visionutils`,
+	`Visual Rights Group`,
 	`vkShare`,
 	`VoidEYE`,
 	`Voil`,
@@ -1361,7 +1369,6 @@ var crawlers = []string{
 	`YahooMailProxy`,
 	`YahooYSMcm`,
 	`YandeG`,
-	`yandex\.com\/bots`,
 	`yanga`,
 	`yeti`,
 	`Yo-yo`,
@@ -1390,4 +1397,5 @@ var crawlers = []string{
 	`ZoteroTranslationServer`,
 	`ZyBorg`,
 	`[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)`,
+	`yandex\.com\/bots`,
 }
