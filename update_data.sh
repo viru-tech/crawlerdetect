@@ -19,9 +19,9 @@ END{
 ' > "${name}.go"
 }
 echo "Updating crawlers.go"
-datafile "https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Crawlers.txt" "crawlers"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt" "crawlers"
 echo "Updating exclusions.go"
-datafile "https://raw.githubusercontent.com/Mazay98/Crawler-Detect/v1.2.109-new-crawl/raw/Exclusions.txt" "exclusions"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.txt" "exclusions"
 
 echo "Patching files for re2 engine"
 # XXX: golang re2 based regex engine does not support negative lookahead Yandex(?!Search)
