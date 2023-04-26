@@ -1,3 +1,3 @@
 module github.com/viru-tech/crawlerdetect
 
-go 1.16
+go 1.19
