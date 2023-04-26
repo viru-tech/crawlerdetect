@@ -1369,7 +1369,6 @@ var crawlers = []string{
 	`YahooMailProxy`,
 	`YahooYSMcm`,
 	`YandeG`,
-	`Yandex`,
 	`yanga`,
 	`yeti`,
 	`Yo-yo`,

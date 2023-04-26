@@ -25,8 +25,9 @@ datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/
 
 echo "Patching files for re2 engine"
 # XXX: golang re2 based regex engine does not support negative lookahead Yandex(?!Search)
-# as workaround add YandexSearch to the exclusions list and add Yandex to the crawlers list
-sed -i "" -e 's/`Yandex(?!Search)`/`Yandex`/' crawlers.go
+# as workaround add YandexSearch to the exclusions list and remove YandexSearch from
+# the crawlers list (we don't want to block Yandex.Dzen)
+sed -i "" -e '/`Yandex(?!Search)`/d' crawlers.go
 sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
 
