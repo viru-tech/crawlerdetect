@@ -1369,7 +1369,6 @@ var crawlers = []string{
 	`YahooMailProxy`,
 	`YahooYSMcm`,
 	`YandeG`,
-	`yandex\.com\/bots`,
 	`Yandex`,
 	`yanga`,
 	`yeti`,
@@ -1399,4 +1398,5 @@ var crawlers = []string{
 	`ZoteroTranslationServer`,
 	`ZyBorg`,
 	`[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)`,
+	`yandex\.com\/bots`,
 }

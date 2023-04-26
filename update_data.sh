@@ -30,6 +30,10 @@ sed -i "" -e 's/`Yandex(?!Search)`/`Yandex`/' crawlers.go
 sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
 
+echo "Patching files with yandex.bots"
+sed -i "" -e '/^}$/i\
+	`yandex\\\.com\\\/bots`,' crawlers.go
+
 echo "Updating testdata/crawlers.txt"
 curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/crawlers.txt
 echo "Updating testdata/devices.txt"
