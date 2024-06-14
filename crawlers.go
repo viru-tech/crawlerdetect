@@ -478,6 +478,7 @@ var crawlers = []string{
 	`Google-Youtube-Links`,
 	`GoogleDocs`,
 	`GoogleHC\/`,
+	`GoogleOther`,
 	`GoogleProber`,
 	`GoogleProducer`,
 	`GoogleSites`,
