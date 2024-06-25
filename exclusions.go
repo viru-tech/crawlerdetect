@@ -50,5 +50,7 @@ var exclusions = []string{
 	`; ID bot`,
 	`; POWER BOT`,
 	`OCTOPUS-CORE`,
+	`htc_botdugls`,
+	`super\/\d+\/Android\/\d+`,
 	`YandexSearch`,
 }
